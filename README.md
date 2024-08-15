@@ -29,6 +29,15 @@ npm install
 npm run start
 ```
 
+you can run
+
+```
+npm run package
+```
+
+to build the gary4live.app. it will show up in `g4l/g4l-ui/release/build/mac`
+
+
 the max4live UI does almost everything that the electron UI does. It doesn't have a crop function, and you can't drag/drop your waveform in, but it will work. i tried to make electron as optional as i could.
 
 i included the basic files for making the installer. Here are the commands I used:
