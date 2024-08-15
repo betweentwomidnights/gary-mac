@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<installer-gui-script minSpecVersion="1">
+    <title>Gary4Live Installer</title>
+    <license file="License.txt"/>
+    <background file="Background.png" alignment="center"/>
+    <welcome file="Welcome.txt"/>
+    <conclusion file="Conclusion.txt"/>
+    <pkg-ref id="com.thecollabagepatch.gary4live" version="1.0.0" installKBytes="0" auth="root">
+        <source>/Applications/g4l/gary4live.pkg</source>
+        <bundle-version>
+            <bundle id="com.thecollabagepatch.gary4live" CFBundleShortVersionString="1.0.0"/>
+        </bundle-version>
+    </pkg-ref>
+    <choices-outline>
+        <line choice="default">
+            <line choice="com.thecollabagepatch.gary4live"/>
+        </line>
+    </choices-outline>
+    <choice id="default"/>
+    <choice id="com.thecollabagepatch.gary4live" visible="true" title="Gary4Live">
+        <pkg-ref id="com.thecollabagepatch.gary4live"/>
+    </choice>
+</installer-gui-script>
+

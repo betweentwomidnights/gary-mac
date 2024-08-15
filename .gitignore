@@ -1,0 +1,19 @@
+g4l-ui/node_modules/
+
+# Ignore macOS system files
+.DS_Store
+
+# Ignore log files
+*.log
+
+# Ignore all .wav files
+*.wav
+
+# Ignore all .wav.asd files
+*.wav.asd
+
+# Ignore the g4l-ui/release/build/ folder
+/g4l-ui/release/build/
+
+# Ignore the tools folder
+/tools/

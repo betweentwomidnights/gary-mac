@@ -1,0 +1,6 @@
+Installation Complete
+
+Gary4Live has been successfully installed on your computer.
+
+Click "Close" to exit the installer.
+

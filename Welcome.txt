@@ -1,0 +1,6 @@
+Welcome to the Gary4Live Installer
+
+This installer will guide you through the installation of the Gary4Live application.
+
+Click "Continue" to proceed.
+
