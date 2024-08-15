@@ -22,7 +22,7 @@ git clone https://github.com/betweentwomidnights/gary-mac.git
 
 rename gary-mac to g4l
 
-cd gary-mac/g4l-ui
+cd g4l/g4l-ui
 
 npm install
 
