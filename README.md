@@ -22,19 +22,14 @@ git clone https://github.com/betweentwomidnights/gary-mac.git
 
 rename gary-mac to g4l
 
-<<<<<<< HEAD
-cd gary-mac/g4l-ui
-=======
+
 cd g4l/g4l-ui
->>>>>>> dc84e6e26b324d28e3715931ef2f414b32da23a8
 
 npm install
 
 npm run start
 ```
 
-<<<<<<< HEAD
-=======
 you can run
 
 ```
@@ -44,7 +39,6 @@ npm run package
 to build the gary4live.app. it will show up in `g4l/g4l-ui/release/build/mac`
 
 
->>>>>>> dc84e6e26b324d28e3715931ef2f414b32da23a8
 the max4live UI does almost everything that the electron UI does. It doesn't have a crop function, and you can't drag/drop your waveform in, but it will work. i tried to make electron as optional as i could.
 
 i included the basic files for making the installer. Here are the commands I used:
@@ -85,8 +79,3 @@ there are many demos of this plugin being used on youtube:
 - [@thecollabagepatch](https://youtube.com/@thecollabagepatch)
 
 a special thanks to lyra for the fine-tuning help that made this plugin interesting.
-<<<<<<< HEAD
-
-
-=======
->>>>>>> dc84e6e26b324d28e3715931ef2f414b32da23a8
