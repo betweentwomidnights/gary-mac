@@ -135,19 +135,19 @@ const createWindow = async () => {
     return path.join(RESOURCES_PATH, ...paths);
   };
 
-  mainWindow = new BrowserWindow({
-    show: false,
-    width: 660,
-    height: 490,
-    icon: getAssetPath('icon.png'),
-    webPreferences: {
-      nodeIntegration: true, // Enable Node.js integration
-      preload: app.isPackaged
-        ? path.join(__dirname, 'preload.js')
-        : path.join(__dirname, '../../.erb/dll/preload.js'),
-    },
-    alwaysOnTop: true,
-  });
+    mainWindow = new BrowserWindow({
+        show: false,
+        width: 660,
+        height: 515,
+        icon: getAssetPath('icon.png'),
+        webPreferences: {
+          nodeIntegration: true, // Enable Node.js integration
+          preload: app.isPackaged
+            ? path.join(__dirname, 'preload.js')
+            : path.join(__dirname, '../../.erb/dll/preload.js'),
+        },
+        alwaysOnTop: true,
+      });
 
   mainWindow.loadURL(resolveHtmlPath('index.html'));
 
