@@ -63,11 +63,11 @@ the max4live UI does almost everything that the electron UI does. It doesn't hav
 
 you can talk to our backend using the url `https://g4l.thecollabagepatch.com` in `commentedout.js`
 
-for now... if our backend goes down, though, it can be built yourself using this repo and 'Rosetta 2' I'm told:
+for now... if our backend goes down, though, it can be built yourself using this repo and 'Rosetta 2' I'm told: https://github.com/betweentwomidnights/gary-backend-combined
 
 ## as of jan 2025 I am actively working on making the docker-compose agnostic to devices so that Apple Silicon can run it with gpu acceleration
 
-https://github.com/betweentwomidnights/gary-backend-combined
+
 
 there are several backend types in that repo. `g4lwebsockets` is the one you'll be spinning up using docker-compose.
 
