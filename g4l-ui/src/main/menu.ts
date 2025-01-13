@@ -179,9 +179,9 @@ export default class MenuBuilder {
           },
         },
         {
-          label: 'community - musicgen discord',
+          label: 'community - discord',
           click() {
-            shell.openExternal('https://discord.gg/4eyZcZcV');
+            shell.openExternal('https://discord.gg/VECkyXEnAd');
           },
         },
         {

@@ -31,19 +31,39 @@ let connectedClient: WebSocket | null = null;
 
 wss.on('connection', function connection(ws) {
   console.log('WebSocket server: Client connected');
-  connectedClient = ws; // Store the connected client for later use
+  connectedClient = ws;
 
-  ws.on('message', function incoming(message) {
-    console.log('received: %s', message);
-    if (mainWindow) {
-      mainWindow.webContents.send('fromNodeScript', message);
-    }
-  });
+// Convert string to Uint8Array before sending
+const connectionMessage = Buffer.from(JSON.stringify({
+  action: 'connection_status',
+  data: true
+}));
 
-  ws.on('close', () => {
-    console.log('WebSocket server: Client disconnected');
-    connectedClient = null;
-  });
+if (mainWindow) {
+  mainWindow.webContents.send('fromNodeScript', connectionMessage);
+}
+
+ws.on('message', function incoming(message) {
+  console.log('received: %s', message);
+  if (mainWindow) {
+    mainWindow.webContents.send('fromNodeScript', message);
+  }
+});
+
+ws.on('close', () => {
+  console.log('WebSocket server: Client disconnected');
+  connectedClient = null;
+
+  // Convert string to Uint8Array for disconnect message
+  const disconnectionMessage = Buffer.from(JSON.stringify({
+    action: 'connection_status',
+    data: false
+  }));
+
+  if (mainWindow) {
+    mainWindow.webContents.send('fromNodeScript', disconnectionMessage);
+  }
+});
 });
 
 function sendMessageToNodeScript(data: { action: string; data?: any }) {
@@ -137,8 +157,8 @@ const createWindow = async () => {
 
     mainWindow = new BrowserWindow({
         show: false,
-        width: 660,
-        height: 480,
+        width: 700,
+        height: 490,
         icon: getAssetPath('icon.png'),
         webPreferences: {
           nodeIntegration: true, // Enable Node.js integration
