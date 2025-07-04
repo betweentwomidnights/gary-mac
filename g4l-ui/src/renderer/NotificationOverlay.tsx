@@ -114,8 +114,11 @@ const NotificationOverlay: React.FC<NotificationOverlayProps> = ({
             color: 'white',
             padding: '8px 16px',
             borderRadius: '6px',
+            borderColor: "white",
+            borderStyle: "solid",    // Add this
+            borderWidth: "2px",      // Add this
             boxShadow: '0 2px 4px rgba(0, 0, 0, 0.1)',
-            zIndex: 1000,
+            zIndex: 15000,
             maxWidth: '300px',
             textAlign: 'center',
             wordWrap: 'break-word',

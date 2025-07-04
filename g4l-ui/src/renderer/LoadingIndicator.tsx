@@ -15,7 +15,8 @@ const LoadingIndicator: React.FC<LoadingIndicatorProps> = ({ action }) => {
         retry: 'regenerating audio...',
         load_output: 'loading output...',
         crop: 'cropping audio...',
-        transform: 'transforming audio...'
+        transform: 'transforming audio...',
+        reset_transform: 'clearing session state... you\'ll now go back to transforming the top waveform'
     };
 
     const message = actionMessages[action] || 'processing...';
@@ -28,6 +29,9 @@ const LoadingIndicator: React.FC<LoadingIndicatorProps> = ({ action }) => {
             transform: 'translate(-50%, -50%)',
             backgroundColor: '#DC2626',
             color: 'white',
+            borderColor: "white",
+            borderStyle: "solid",    // Add this
+            borderWidth: "2px",      // Add this
             padding: '8px 16px',
             borderRadius: '6px',
             boxShadow: '0 2px 4px rgba(0, 0, 0, 0.1)',
