@@ -134,7 +134,7 @@ const USE_HTTPS = true;
 
 ## max4live ui standalone
 
-the max4live UI does almost everything that the electron UI does. it doesn't have jerry generation, crop function, drag/drop, or the visual feedback, but it will work for basic gary continuations. we tried to make electron as optional as possible while adding the new features.
+the max4live UI does almost everything that the electron UI does. the only things it doesn't include are cropping and drag/drop functionality. i tried to make the electron app optional, but it's becoming more and more necessary for obvious ux reasons.
 
 ## community
 
