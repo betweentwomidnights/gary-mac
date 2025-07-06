@@ -88,7 +88,8 @@ the app will be built to `g4l-ui/release/build/mac/gary4live.app`.
 if you're developing, you'll need to perform a **find and replace** in these files:
 - `electron-communication.js`
 - `commentedout.js`
-- both max4live UI objects (node.script components)
+- both max4live UI objects shown here:
+![FilePaths Screenshot](filepaths.png)
 
 change `/Applications/g4l/` to your development path (e.g., `/Documents/g4l/`).
 
