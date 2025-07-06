@@ -2,7 +2,7 @@
 
 ## update july 2025 - now with stable-audio-open-small (jerry)
 
-![Gary4Live Screenshot](screenshot.png)
+![Gary4Live Screenshot](jerry_screenshot.png)
 
 gary4live now includes three AI models working together:
 
